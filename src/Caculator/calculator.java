@@ -26,6 +26,7 @@ import java.awt.Font;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.awt.event.ActionEvent;
 
 public class calculator extends JFrame {
@@ -44,6 +45,7 @@ public class calculator extends JFrame {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
+		logcalculator n = new logcalculator();
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -78,6 +80,7 @@ public class calculator extends JFrame {
 	 * Create the frame.
 	 */
 	public calculator() {
+		logcalculator n = new logcalculator();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 344, 430);
 		
@@ -203,6 +206,21 @@ public class calculator extends JFrame {
 		panel.add(btnNewButton_13, gbc_btnNewButton_13);
 		
 		JButton btnNewButton_6 = new JButton("7");
+		btnNewButton_6.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+		            zt = textField.getText();
+		            z = zt + "7";
+		            textField.setText(z);
+		            try {
+						n.Logs("Da nhap vao 7");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+		        
+			}
+		});
 		GridBagConstraints gbc_btnNewButton_6 = new GridBagConstraints();
 		gbc_btnNewButton_6.weighty = 1.0;
 		gbc_btnNewButton_6.weightx = 1.0;
@@ -213,6 +231,21 @@ public class calculator extends JFrame {
 		panel.add(btnNewButton_6, gbc_btnNewButton_6);
 		
 		JButton btnNewButton_14 = new JButton("8");
+		btnNewButton_14.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+		            zt = textField.getText();
+		            z = zt + "8";
+		            textField.setText(z);
+		            try {
+						n.Logs("Da nhap vao 8");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+		        
+			}
+		});
 		GridBagConstraints gbc_btnNewButton_14 = new GridBagConstraints();
 		gbc_btnNewButton_14.weighty = 1.0;
 		gbc_btnNewButton_14.weightx = 1.0;
@@ -223,6 +256,21 @@ public class calculator extends JFrame {
 		panel.add(btnNewButton_14, gbc_btnNewButton_14);
 		
 		JButton btnNewButton_15 = new JButton("9");
+		btnNewButton_15.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+		            zt = textField.getText();
+		            z = zt + "9";
+		            textField.setText(z);
+		            try {
+						n.Logs("Da nhap vao 9");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+		        
+			}
+		});
 		GridBagConstraints gbc_btnNewButton_15 = new GridBagConstraints();
 		gbc_btnNewButton_15.weighty = 1.0;
 		gbc_btnNewButton_15.weightx = 1.0;
@@ -233,6 +281,27 @@ public class calculator extends JFrame {
 		panel.add(btnNewButton_15, gbc_btnNewButton_15);
 		
 		JButton btnNewButton_16 = new JButton("/");
+		btnNewButton_16.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+	            try{
+	                num1 = Integer.parseInt(textField.getText());
+	            }catch(NumberFormatException f){
+	            	textField.setText("Invalid Format");
+	                return;
+	            }
+				
+	            z = "";
+	            textField.setText(z);
+	            check = 4;
+	            try {
+					n.Logs("Da nhan vao phep tinh chia");
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
 		GridBagConstraints gbc_btnNewButton_16 = new GridBagConstraints();
 		gbc_btnNewButton_16.weighty = 1.0;
 		gbc_btnNewButton_16.weightx = 1.0;
@@ -243,6 +312,21 @@ public class calculator extends JFrame {
 		panel.add(btnNewButton_16, gbc_btnNewButton_16);
 		
 		JButton btnNewButton_17 = new JButton("%");
+		btnNewButton_17.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+		            zt = textField.getText();
+		            z = zt + "%";
+		            textField.setText(z);
+		            try {
+						n.Logs("Da nhap vao %");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+		        
+			}
+		});
 		GridBagConstraints gbc_btnNewButton_17 = new GridBagConstraints();
 		gbc_btnNewButton_17.weighty = 1.0;
 		gbc_btnNewButton_17.weightx = 1.0;
@@ -253,6 +337,21 @@ public class calculator extends JFrame {
 		panel.add(btnNewButton_17, gbc_btnNewButton_17);
 		
 		JButton btnNewButton_7 = new JButton("4");
+		btnNewButton_7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+		            zt = textField.getText();
+		            z = zt + "4";
+		            textField.setText(z);
+		            try {
+						n.Logs("Da nhap vao 4");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+		        
+			}
+		});
 		GridBagConstraints gbc_btnNewButton_7 = new GridBagConstraints();
 		gbc_btnNewButton_7.weighty = 1.0;
 		gbc_btnNewButton_7.weightx = 1.0;
@@ -263,6 +362,21 @@ public class calculator extends JFrame {
 		panel.add(btnNewButton_7, gbc_btnNewButton_7);
 		
 		JButton btnNewButton_18 = new JButton("5");
+		btnNewButton_18.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+		            zt = textField.getText();
+		            z = zt + "5";
+		            textField.setText(z);
+		            try {
+						n.Logs("Da nhap vao 5");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+		        
+			}
+		});
 		GridBagConstraints gbc_btnNewButton_18 = new GridBagConstraints();
 		gbc_btnNewButton_18.weighty = 1.0;
 		gbc_btnNewButton_18.weightx = 1.0;
@@ -273,6 +387,21 @@ public class calculator extends JFrame {
 		panel.add(btnNewButton_18, gbc_btnNewButton_18);
 		
 		JButton btnNewButton_19 = new JButton("6");
+		btnNewButton_19.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+		            zt = textField.getText();
+		            z = zt + "6";
+		            textField.setText(z);
+		            try {
+						n.Logs("Da nhap vao 6");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+		        
+			}
+		});
 		GridBagConstraints gbc_btnNewButton_19 = new GridBagConstraints();
 		gbc_btnNewButton_19.weighty = 1.0;
 		gbc_btnNewButton_19.weightx = 1.0;
@@ -283,6 +412,27 @@ public class calculator extends JFrame {
 		panel.add(btnNewButton_19, gbc_btnNewButton_19);
 		
 		JButton btnNewButton_20 = new JButton("*");
+		btnNewButton_20.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+	            try{
+	                num1 = Integer.parseInt(textField.getText());
+	            }catch(NumberFormatException f){
+	            	textField.setText("Invalid Format");
+	                return;
+	            }
+				
+	            z = "";
+	            textField.setText(z);
+	            check = 3;
+	            try {
+					n.Logs("Da nhan vao phep tinh nhan");
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
 		GridBagConstraints gbc_btnNewButton_20 = new GridBagConstraints();
 		gbc_btnNewButton_20.weighty = 1.0;
 		gbc_btnNewButton_20.weightx = 1.0;
@@ -309,7 +459,12 @@ public class calculator extends JFrame {
 		            zt = textField.getText();
 		            z = zt + "1";
 		            textField.setText(z);
-
+		            try {
+						n.Logs("Da nhap vao 1");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 		        
 			}
 		});
@@ -328,6 +483,12 @@ public class calculator extends JFrame {
 				 zt = textField.getText();
 		            z = zt + "2";
 		            textField.setText(z);
+		            try {
+						n.Logs("Da nhap vao 2");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 			}
 		});
 		GridBagConstraints gbc_btnNewButton_22 = new GridBagConstraints();
@@ -340,6 +501,21 @@ public class calculator extends JFrame {
 		panel.add(btnNewButton_22, gbc_btnNewButton_22);
 		
 		JButton btnNewButton_23 = new JButton("3");
+		btnNewButton_23.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+		            zt = textField.getText();
+		            z = zt + "3";
+		            textField.setText(z);
+		            try {
+						n.Logs("Da nhap vao 3");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+		        
+			}
+		});
 		GridBagConstraints gbc_btnNewButton_23 = new GridBagConstraints();
 		gbc_btnNewButton_23.weighty = 1.0;
 		gbc_btnNewButton_23.weightx = 1.0;
@@ -350,6 +526,27 @@ public class calculator extends JFrame {
 		panel.add(btnNewButton_23, gbc_btnNewButton_23);
 		
 		JButton btnNewButton_24 = new JButton("-");
+		btnNewButton_24.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+	            try{
+	                num1 = Integer.parseInt(textField.getText());
+	            }catch(NumberFormatException f){
+	            	textField.setText("Invalid Format");
+	                return;
+	            }
+				
+	            z = "";
+	            textField.setText(z);
+	            check = 2;
+	            try {
+					n.Logs("Da nhan vao phep tinh tru");
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
 		GridBagConstraints gbc_btnNewButton_24 = new GridBagConstraints();
 		gbc_btnNewButton_24.weighty = 1.0;
 		gbc_btnNewButton_24.weightx = 1.0;
@@ -380,7 +577,88 @@ public class calculator extends JFrame {
 	    			object = namingcontext.resolve(path);
 	    			tp tpRef = tpHelper.narrow(object);	
 	    			xd = tpRef.add(num1, num2);
+	    			try {
+						n.Logs("ket qua thuc hien phep tinh cong");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 	    			
+	    		}catch(Exception e1) {
+	    			System.out.println("Client error ");
+	    			e1.printStackTrace();
+	    		}
+
+	            }
+	            
+	            
+	            if(check == 2)
+	            {
+	                try {
+	            	ORB orb = ORB.init(client,null);
+	    			org.omg.CORBA.Object object = orb.resolve_initial_references("NameService");
+	    			NamingContext namingcontext=NamingContextHelper.narrow(object);
+	    			NameComponent nameComp = new NameComponent("Hello","");
+	    			NameComponent[] path = {nameComp};
+	    			object = namingcontext.resolve(path);
+	    			tp tpRef = tpHelper.narrow(object);	
+	    			xd = tpRef.sub(num1, num2);
+	    			try {
+						n.Logs("ket qua thuc hien phep tinh tru");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+	    			
+	    		}catch(Exception e1) {
+	    			System.out.println("Client error ");
+	    			e1.printStackTrace();
+	    		}
+
+	            }
+	            
+	            if(check == 3)
+	            {
+	                try {
+	            	ORB orb = ORB.init(client,null);
+	    			org.omg.CORBA.Object object = orb.resolve_initial_references("NameService");
+	    			NamingContext namingcontext=NamingContextHelper.narrow(object);
+	    			NameComponent nameComp = new NameComponent("Hello","");
+	    			NameComponent[] path = {nameComp};
+	    			object = namingcontext.resolve(path);
+	    			tp tpRef = tpHelper.narrow(object);	
+	    			xd = tpRef.mul(num1, num2);
+	    			try {
+						n.Logs("ket qua thuc hien phep tinh nhan");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+	    			
+	    		}catch(Exception e1) {
+	    			System.out.println("Client error ");
+	    			e1.printStackTrace();
+	    		}
+
+	            }
+	            
+	            if(check == 4)
+	            {
+	                try {
+	            	ORB orb = ORB.init(client,null);
+	    			org.omg.CORBA.Object object = orb.resolve_initial_references("NameService");
+	    			NamingContext namingcontext=NamingContextHelper.narrow(object);
+	    			NameComponent nameComp = new NameComponent("Hello","");
+	    			NameComponent[] path = {nameComp};
+	    			object = namingcontext.resolve(path);
+	    			tp tpRef = tpHelper.narrow(object);	
+	    			xd = tpRef.div(num1, num2);
+	    			try {
+						n.Logs("ket qua thuc hien phep tinh chia");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 	    		}catch(Exception e1) {
 	    			System.out.println("Client error ");
 	    			e1.printStackTrace();
@@ -401,6 +679,31 @@ public class calculator extends JFrame {
 		panel.add(btnNewButton_25, gbc_btnNewButton_25);
 		
 		JButton btnNewButton_9 = new JButton("0");
+		btnNewButton_9.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+		            zt = textField.getText();
+		            z = zt + "0";
+		            textField.setText(z);
+		            try {
+						n.Logs("Da nhap vao 0");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+		        
+			}
+		});
+		btnNewButton_8.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+		            zt = textField.getText();
+		            z = zt + "0";
+		            textField.setText(z);
+
+		        
+			}
+		});
 		GridBagConstraints gbc_btnNewButton_9 = new GridBagConstraints();
 		gbc_btnNewButton_9.gridwidth = 2;
 		gbc_btnNewButton_9.weighty = 1.0;
@@ -412,6 +715,21 @@ public class calculator extends JFrame {
 		panel.add(btnNewButton_9, gbc_btnNewButton_9);
 		
 		JButton btnNewButton_26 = new JButton(".");
+		btnNewButton_26.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+		            zt = textField.getText();
+		            z = zt + ".";
+		            textField.setText(z);
+		            try {
+						n.Logs("Da nhap vao .");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+		        
+			}
+		});
 		GridBagConstraints gbc_btnNewButton_26 = new GridBagConstraints();
 		gbc_btnNewButton_26.weighty = 1.0;
 		gbc_btnNewButton_26.weightx = 1.0;
@@ -435,6 +753,12 @@ public class calculator extends JFrame {
 	            z = "";
 	            textField.setText(z);
 	            check = 1;
+	            try {
+					n.Logs("Da nhan vao phep tinh cong");
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 		});
 		GridBagConstraints gbc_btnNewButton_27 = new GridBagConstraints();
@@ -449,7 +773,7 @@ public class calculator extends JFrame {
 		textField = new JTextField();
 		textField.setFont(new Font("Trebuchet MS", Font.PLAIN, 25));
 		textField.setHorizontalAlignment(SwingConstants.RIGHT);
-		textField.setText("0");
+		//textField.setText();
 		textField.setEnabled(false);
 		textField.setBounds(10, 40, 302, 50);
 		contentPane.add(textField);
@@ -463,7 +787,15 @@ class ExampleServant extends _tpImplBase{
 	public float add(float a, float b) {
 		return a+b;
 	}
-	
+	public float sub(float a, float b) {
+		return a-b;
+	}
+	public float mul(float a, float b) {
+		return a*b;
+	}
+	public float div(float a, float b) {
+		return a/b;
+	}
 	
 	
 }

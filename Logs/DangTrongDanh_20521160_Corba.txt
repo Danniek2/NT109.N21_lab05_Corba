@@ -1,0 +1,6 @@
+Sun Jun 04 20:43:16 ICT 2023: Nhap vao so thu nhat
+Sun Jun 04 20:43:23 ICT 2023: Nhap vao so thu hai
+Sun Jun 04 20:43:23 ICT 2023: Ket qua cua phep tinh cong 2 so
+Sun Jun 04 20:43:23 ICT 2023: Ket qua cua phep tinh tru 2 so
+Sun Jun 04 20:43:23 ICT 2023: Ket qua cua phep tinh nhan 2 so
+Sun Jun 04 20:43:23 ICT 2023: Ket qua cua phep tinh chia 2 so
