@@ -1,0 +1,5 @@
+module exampleApp{
+	interface tp{
+		float add(in float a, in float b);
+	};
+};
